@@ -24,6 +24,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'custom-bg': '#B68C5A',
                     }
                 }
             }
@@ -38,15 +39,20 @@
             font-family: 'EB Garamond', serif;
             font-family: 'Poppins', sans-serif;
         }
+
+        /* background image*/
+        .bg-custom-background-image {
+            background-image: url('/images/banner.png');
+        }
     </style>
 
 
 </head>
 
 <body class="fontgaramond">
-    <header class="container mx-auto">
+    <header class="container mx-auto my-10">
         <!-- navbar-->
-        <nav>
+        <nav class="my-20">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -78,11 +84,35 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Free Consultation</a>
+                    <a class="btn bg-custom-bg text-white">Free Consultation</a>
                 </div>
             </div>
 
         </nav>
+
+        <!--banner  -->
+        <section class=" justify-center items-center text-center bg-custom-background-image lg:bg-cover lg:bg-center  text-white lg:p-40 ">
+
+            <h1 class="text-4xl lg:text-7xl	font-extrabold mb-6	">
+
+                We Provide Effective
+                <br> Legal Solutions
+            </h1>
+            <p class=" lg:max-w-2xl text-center mx-auto  mb-6">There are many variations of passages of Lorem Ipsum
+                available, but the majority have suffered alteration
+                in some form, by injected humour.</p>
+
+            <div class="indicator flex mx-auto flex-col lg:flex-row   lg:gap-6">
+               
+                <input type="text" placeholder="Search your services" class="input input-bordered" />
+
+                <button class="btn bg-custom-bg text-white ">Search</button>
+
+            </div>
+
+        </section>
+
+
 
     </header>
 
